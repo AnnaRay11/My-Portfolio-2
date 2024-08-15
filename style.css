@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+  
+body{
+  background-image:url(https://images.unsplash.com/photo-1620503374956-c942862f0372?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat:no-repeat;
+  background-size:100vw;
+  min-width:50px;
+  
+    
+}
+  
+.nav{
+  display:flex;
+  justify-content:flex-end; 
+  width:100%;
+  position:fixed;
+  background-color:rgb(255, 255, 255, 0.2 );
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 10px 0px #617a74;
+  border-radius: 0 0 10px 10px;
+  z-index:1;
+
+    
+}
+  
+  
+.navbar-list{
+  display:flex;
+  list-style-type:none;
+  font-family:"Noto Serif", serif;
+  font-size:18px;
+   
+}
+  
+.navbar-list a{
+  display:block;
+  padding:2rem;
+  color:#d9892d;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  background-color:#d8b9a3;
+  color:#2e8786;
+  
+}
+
+#welcome-section{
+  display:flex;
+  justify-content:center;
+  
+}
+
+
+.container-1{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:60%;
+  background-color:rgb(255, 255, 255, 0.2 );
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 13px 0px #617a74;
+  border-radius:19px;
+  padding:10% 0 10% 0;
+  margin:220px 0 120px 0;
+  
+}
+
+h1{
+  font-size:8vw;
+  color:rgba(255, 255, 255, 0.4);
+  -webkit-text-stroke:1px;
+}
+
+p{
+  font-size:3vw;
+  color:rgba(1,69,58,0.5);
+  letter-spacing:1.5;
+}
+
+.projects{
+  display:flex;
+  justify-content:center;
+  flex-flow:wrap;
+  background-color:#8bbfc3;
+  position:relative;
+  overflow:hidden;
+  padding:8rem;
+  column-gap:5%;
+  
+}
+
+h2{
+  font-size:2vw;
+  margin:5px 25% 40px 25%;
+  color:#bc720d;
+}
+
+.project-title{
+  font-size:1.5vw;
+  text-align:center;
+  color:#EEEEEE;
+  padding-bottom:15px;
+  padding-top:15px;
+  
+}
+
+img{
+  width:25vw;
+  padding:13px;
+  box-shadow:0 0 13px 0px #617a74;
+  border-radius:10px
+}
+
+img:hover {
+  background-color:rgba(225, 225, 225, 0.4);
+  
+}
+
+.project-link > a:hover{
+  background-color:transparent;
+}
+
+.contact{
+display:flex;
+flex-direction:column;
+background-color:rgb(238, 238, 238, 0.4);
+padding:8rem;
+
+
+}
+
+.container-2{
+display:flex;
+justify-content:space-evenly;
+align-content:center;
+margin-top:60px;
+}
+
+.contact > h2{
+text-align:center;
+margin-bottom:15px;
+
+}
+
+.contact > p{
+font-size:1.9vw;
+text-align:center;
+}
+
+.contact-details{
+font-size:20px;
+padding-bottom:40px
+}
+
+.how-to-contact{
+font-size:25px;
+font-weight:bold;
+padding-top:8px;
+padding-bottom:5px
+}
+
+.get-in-touch > a:hover{
+background-color:transparent;
+}
+
+.get-in-touch > a > svg:hover{
+fill:#bc720d;
+
+}
+
+svg{
+margin:0 60;
+}
+
+.map{
+ width:100%;
+}
+
+footer{
+display:flex;      
+justify-content:center;
+background:#8bbfc3;
+padding:80px;
+}
+
+footer > a:hover{ 
+background-color:transparent;
+
+}
+
+footer > a > svg:hover{
+fill:#EEEEEE;
+}
+
+@media(min-width:992px) and (max-width:1199px){
+.container-1{
+  margin-bottom:80px;
+}
+
+.projects{
+  padding-top:5rem;
+  
+}
+
+.how-to-contact{
+  font-size:21px;
+}
+.contact-details{
+  font-size:19px
+}
+
+.contact{
+  padding:5rem;
+
+}
+
+}
+
+@media(min-width:768px) and (max-width:991px){
+.navbar-list{
+  font-size:16px;
+}
+
+.navbar-list a{
+  padding:1.5rem
+}
+
+.container-1{
+  margin:150px 0 70px 0;
+  width:70%
+  
+}
+
+ h2{
+  font-size:1.5rem;
+  margin:5px 5% 30px 5%;
+ }
+
+ .project-title{
+  font-size: 1.3rem
+}
+
+
+ .projects{
+   flex-direction: column;
+   align-items:center;
+   padding-top:4rem;
+   padding-bottom:4rem;
+ }
+
+ img{
+  width:100%;
+ }
+
+ .how-to-contact{
+  font-size:19px;
+}
+.contact-details{
+  font-size:15px
+}
+
+svg{
+  margin:0 46;
+  height:19
+}
+
+.contact{
+  padding:4rem;
+}
+
+footer{
+  padding:50px;
+  
+}
+
+
+}
+
+@media (min-width:200px) and (max-width:767px){
+
+ .navbar-list{
+  font-size:12px;
+}
+
+.navbar-list a{
+  padding:1rem;
+}
+
+.container-1{
+  margin:14% 0 7% 0;
+  width:70%
+  
+}
+ .projects{
+   flex-direction: column;
+   align-items:center;
+   padding-top:3rem;
+   padding-bottom:3rem;
+
+ }
+
+ h2{
+  margin:5px 0 30px 0;
+  font-size:1.1rem;
+  text-align:center;
+}
+
+.how-to-contact{
+  font-size:0.8rem;
+}
+.contact-details{
+  font-size:0.7rem
+}
+
+svg{
+  margin:0 45;
+  height:18
+}
+
+.contact{
+  padding:3rem;
+}
+
+
+footer{
+  padding:30px;
+}
+
+img{
+  width:100%;
+}
+
+.project-title{
+  font-size: 1rem
+}
+
+.contact > p{
+  font-size:1rem;
+  
+  }
+
+
+ 
+  
+}
+
+
+    
